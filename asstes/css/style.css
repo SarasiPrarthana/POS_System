@@ -141,6 +141,11 @@
     padding: 40px;
 }
 
+.content-container img{
+    width: 35px;
+    height: auto;
+}
+
 .content-container span{
     font-weight: bold;
     color: orange;
