@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POS_System</title>
+    <title>Burger Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="/asstes/css/style.css">
 </head>
+
 <body>
+    <header class="navbar flex justify-between items-center px-14 py-2 border-b border-gray-200 bg-white">
+        <ul class="nav-left flex gap-10 items-center">
+            <li><a href="#" class="font-bold hover:text-yellow-700">Home ▾</a></li>
+            <li><a href="#" class="font-bold hover:text-yellow-700">Menu</a></li>
+            <li><a href="#" class="font-bold hover:text-yellow-700">About Us</a></li>
+        </ul>
+
+        <div class="logo text-center">
+            <img src="/asstes/images/remov bg.png" alt="logo" class="h-20 mx-auto">
+        </div>
+
+        <ul class="nav-left flex gap-10 items-center justify-end">
+            <li><a href="#" class="font-bold hover:text-yellow-700">Contact</a></li>
+            <li><a href="#" class="font-bold hover:text-yellow-700">Feedback</a></li>
+            <button class="add-to-cart mt-2 bg-black hover:bg-yellow-600 text-white px-4 py-2 rounded-full text-sm">🛒
+                Add to Cart</button>
+        </ul>
+
+    </header>
     <script src="/asstes/js/index.js"></script>
 </body>
+
 </html>
