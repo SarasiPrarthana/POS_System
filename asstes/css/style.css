@@ -1,0 +1,117 @@
+.hero{
+    position: relative;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: url('/asstes/images/hero-img.jpeg') no-repeat center center/cover;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content{
+    position: relative;
+    max-width: 550px;
+    margin-left: 5%;
+    z-index: 2;
+    color: white;
+}
+
+.hero h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero p{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #dcdcdc;
+}
+
+.about-link{
+    display: inline-block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2px;
+    transition: 0.3s;
+}
+
+.about-link:hover{
+    color: #facc15;
+    border-color: #facc15;
+}
+
+.bottom-bar{
+    display: flex;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    width: 750px;
+    background: #fff;
+    color: #000;
+}
+
+.order-now{
+    background: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-now:hover{
+    background: #facc15;
+    color: #111;
+}
+
+.info{
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+.info h4{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.info p,
+.info a{
+    font-size: 0.9rem;
+    color: #333;
+    display: block;
+    margin-bottom: 0.3rem;
+    text-decoration: none;
+}
+
+.info a:hover{
+    color: #facc15;
+}
+
+@media(max-width: 768px){
+    .hero h1{
+        font-size: 2.2rem;
+    }
+    .bottom-bar{
+        flex-direction: column;
+    }
+    .info{
+        flex-direction: column;
+        text-align: center;
+    }
+}
