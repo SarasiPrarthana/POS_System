@@ -46,15 +46,15 @@
 }
 
 .about-link:hover{
-    color: #facc15;
-    border-color: #facc15;
+    color: orange;
+    border-color: orange;
 }
 
 .bottom-bar{
     display: flex;
     position: absolute;
     right: 10px;
-    bottom: 0px;
+    bottom: -80px;
     width: 750px;
     background: #fff;
     color: #000;
@@ -74,7 +74,7 @@
 }
 
 .order-now:hover{
-    background: #facc15;
+    background: orange;
     color: #111;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .info a:hover{
-    color: #facc15;
+    color: orange;
 }
 
 @media(max-width: 768px){
@@ -113,5 +113,80 @@
     .info{
         flex-direction: column;
         text-align: center;
+    }
+}
+
+.section-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.image-container{
+    flex: 1;
+}
+
+.image-container img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.content-container{
+    flex: 1;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.content-container span{
+    font-weight: bold;
+    color: orange;
+}
+
+.content-container h4{
+    font-size: 14px;
+    font-weight: normal;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.content-container h2{
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.content-container p{
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn{
+    background-color: #111;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #333;
+}
+
+@media(max-width: 768px){
+    .section-container{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .image-container{
+        margin-bottom: 20px;
     }
 }
