@@ -255,3 +255,30 @@
     font-weight: bold;
     color: #111;
 }
+.bg-footer-img{
+    background: url('/asstes/images/Burgerly.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+footer{
+    background-color: #111;
+    color: #bbb;
+    padding: 2rem 1rem;
+}
+
+footer a{
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+footer a:hover{
+    color: white;
+}
