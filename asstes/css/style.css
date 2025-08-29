@@ -265,6 +265,7 @@
     justify-content: center;
     color: white;
     text-align: center;
+    filter: blur(1px);
 }
 
 footer{
@@ -282,3 +283,62 @@ footer a{
 footer a:hover{
     color: white;
 }
+
+.menu-hero{
+    background: url(/asstes/images/fries.webp);
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-hero .overlay{
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.menu-hero h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.menu-hero p{
+    font-size: 1.2rem;
+}
+
+.menu-nav{
+    position: sticky;
+    top: 0;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.menu-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 12px 0;
+}
+
+.menu-nav ul li{
+    margin: 0 15px;
+}
+
+.menu-nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu-nav ul li a:hover{
+    color: #e63946;
+}
+
