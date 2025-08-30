@@ -4,138 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <title>Your Cart</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            padding: 40px;
-            background: #fefefe;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .cart-item {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 15px 20px;
-            margin-bottom: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .cart-item-name {
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        .cart-item-price {
-            color: #444;
-        }
-
-        .remove-btn {
-            background-color: #e74c3c;
-            border: none;
-            color: white;
-            padding: 6px 12px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
-            margin-left: 15px;
-            transition: background-color 0.3s ease;
-        }
-
-        .remove-btn:hover {
-            background-color: #c0392b;
-        }
-
-        .total {
-            text-align: right;
-            font-size: 20px;
-            font-weight: bold;
-            margin-top: 30px;
-        }
-
-        .empty-msg {
-            text-align: center;
-            font-size: 18px;
-            color: #999;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="/asstes/css/style.css">
 
 <body>
-
-    <h2>Your Cart</h2>
+    <h2 class="your-cart">Your Cart</h2>
     <div id="cart-container"></div>
-    <div class="total">Total: Rs. <span id="total-amount">0</span></div>
+    <div class="cart-summary">
+        <div class="summary-label">Total</div>
+        <div class="summary-amount">: Rs. <span id="total-amount">0</span></div>
 
-    <script>
-        function getCart() {
-            return JSON.parse(localStorage.getItem("cart")) || {};
-        }
-
-        function saveCart(cart) {
-            localStorage.setItem("cart", JSON.stringify(cart));
-        }
-
-        function removeItem(id) {
-            const cart = getCart();
-            if (cart[id]) {
-                delete cart[id];
-                saveCart(cart);
-                renderCart();
-            }
-        }
-
-        function renderCart() {
-            const cart = getCart();
-            const cartContainer = document.getElementById("cart-container");
-            const totalDisplay = document.getElementById("total-amount");
-            cartContainer.innerHTML = "";
-            let total = 0;
-
-            const keys = Object.keys(cart);
-            if (keys.length === 0) {
-                cartContainer.innerHTML = '<p class="empty-msg">Your cart is empty.</p>';
-                totalDisplay.textContent = '0';
-                return;
-            }
-
-            keys.forEach(id => {
-                const item = cart[id];
-                total += item.price * item.qty;
-
-                const div = document.createElement("div");
-                div.className = "cart-item";
-                div.innerHTML = `
-          <div>
-            <div class="cart-item-name">${item.name}</div>
-            <div class="cart-item-price">Rs. ${item.price} × ${item.qty}</div>
-          </div>
-          <div>
-            Rs. ${item.price * item.qty}
-            <button class="remove-btn" data-id="${id}">Remove</button>
-          </div>
-        `;
-
-                cartContainer.appendChild(div);
-
-                // Add event listener for remove button
-                div.querySelector(".remove-btn").addEventListener("click", () => {
-                    removeItem(id);
-                });
-            });
-
-            totalDisplay.textContent = total;
-        }
-
-        renderCart();
-    </script>
-
-
+        <script src="/asstes/js/index.js"></script>
 </body>
 
 </html>
