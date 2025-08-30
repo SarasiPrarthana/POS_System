@@ -266,7 +266,7 @@
 }
 
 .bg-footer-img {
-    background: url('/asstes/images/Burgerly.jpg');
+    background: url('./asstes/images/Burgerly.jpg');
     background-size: cover;
     background-attachment: fixed;
     height: 80vh;
@@ -295,7 +295,7 @@ footer a:hover {
 }
 
 .menu-hero {
-    background: url(./asstes/images/fries.webp);
+    background: url('./asstes/images/fries.webp');
     background-size: 100%;
     background-attachment: fixed;
     height: 60vh;
