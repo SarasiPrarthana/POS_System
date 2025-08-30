@@ -40,7 +40,8 @@
             <li><a href="#" class="font-bold hover:text-yellow-700">Contact</a></li>
             <li><a href="#" class="font-bold hover:text-yellow-700">Feedback</a></li>
             <button
-                class="font-bold add-to-cart mt-2 bg-black hover:bg-yellow-600 text-white px-4 py-2 rounded-full text-sm">Order
+                class="font-bold add-to-cart mt-2 bg-black hover:bg-yellow-600 text-white px-4 py-2 rounded-full text-sm"
+                onclick="window.location.href='cart.html';">Order
                 Now</button>
         </ul>
     </header>
@@ -73,7 +74,8 @@
 
     <div class="grid md:grid-cols-5 gap-8">
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="01" data-name="French Fries"
+            data-price="790">
             <img src="/asstes/images/fries.jpeg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -81,13 +83,14 @@
                     <p class="font-bold">Rs.790</p>
                 </div>
                 <p class="text-gray-600 mt-2">Crispy golden fries,perfectly salted and served hot.</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="02" data-name="Nuggets"
+            data-price="1390">
             <img src="/asstes/images/nuggets.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -95,13 +98,14 @@
                     <p class="font-bold">Rs.1390</p>
                 </div>
                 <p class="text-gray-600 mt-2">Juicy bite-sized chicken,coated in a crunchy crust.</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="03" data-name="Chicken Wings"
+            data-price="790">
             <img src="/asstes/images/wings.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -109,13 +113,14 @@
                     <p class="font-bold">Rs.790</p>
                 </div>
                 <p class="text-gray-600 mt-2">Tender wings tossed in your choice of spicy.</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="04" data-name="Fiery Chicken"
+            data-price="1290">
             <img src="/asstes/images/Fiery-Chicken-Bites.webp" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -123,13 +128,14 @@
                     <p class="font-bold">Rs.1290</p>
                 </div>
                 <p class="text-gray-600 mt-2">Spicy marinated chicken with abold,fiery kick.</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="05" data-name="Popcorn Chicken"
+            data-price="990">
             <img src="/asstes/images/popcorn-chicken-recipe.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -137,13 +143,14 @@
                     <p class="font-bold">Rs.990</p>
                 </div>
                 <p class="text-gray-600 mt-2">Crispy mini chicken bites,perfects for snacking.</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="06" data-name="Chicken Kebab"
+            data-price="1190">
             <img src="/asstes/images/kebab.webp" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -151,13 +158,14 @@
                     <p class="font-bold">Rs.1190</p>
                 </div>
                 <p class="text-gray-600 mt-2">Grilled skewers of seasoned chicken.</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="07" data-name="Beef Kebab"
+            data-price="1390">
             <img src="/asstes/images/Beef-Kabobs.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -165,13 +173,14 @@
                     <p class="font-bold">Rs.1390</p>
                 </div>
                 <p class="text-gray-600 mt-2">Juicy beef kebabs marinated with rich spices.</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow- product-card" data-id="08" data-name="Chicken Panini"
+            data-price="620">
             <img src="/asstes/images/chicken_panini.jpeg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -179,13 +188,14 @@
                     <p class="font-bold">Rs.620</p>
                 </div>
                 <p class="text-gray-600 mt-2">Toasted panini stuffed with grilled chicken,cheese & fresh vegies.</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="09" data-name="Beef Panini"
+            data-price="690">
             <img src="/asstes/images/beef_panini.jpeg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -193,13 +203,14 @@
                     <p class="font-bold">Rs.690</p>
                 </div>
                 <p class="text-gray-600 mt-2">Savory beef with melted cheese and herbs in a crispy panini.</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="10" data-name="Garlic Bread"
+            data-price="590">
             <img src="/asstes/images/Garlic-Bread.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -207,13 +218,14 @@
                     <p class="font-bold">Rs.590</p>
                 </div>
                 <p class="text-gray-600 mt-2">Warm,buttery bread with a rich garlic flavor.</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="11" data-name="Potato Wedges"
+            data-price="1090">
             <img src="/asstes/images/wedges.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -221,21 +233,22 @@
                     <p class="font-bold">Rs.1090</p>
                 </div>
                 <p class="text-gray-600 mt-2">Thick-cut,crispy outside and fluffy inside.</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
     </div>
 
     <!--  -->
-    <!-- <section id="burgers" class="py-12 px-6">
+    <section id="burgers" class="py-12 px-6">
         <h2 class="text-5xl font-bold mb-9 border-b-4 inline-block relative">Burgers</h2>
     </section>
 
     <div class="grid md:grid-cols-5 gap-8">
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="12" data-name="French Fries"
+            data-price="790">
             <img src="/asstes/images/bee" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -243,13 +256,14 @@
                     <p class="font-bold">Rs.790</p>
                 </div>
                 <p class="text-gray-600 mt-2">Big</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="01" data-name="French Fries"
+            data-price="790">
             <img src="/asstes/images/wedges.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -257,13 +271,14 @@
                     <p class="font-bold">Rs.790</p>
                 </div>
                 <p class="text-gray-600 mt-2">Big</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="01" data-name="French Fries"
+            data-price="790">
             <img src="/asstes/images/wedges.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -271,13 +286,14 @@
                     <p class="font-bold">Rs.790</p>
                 </div>
                 <p class="text-gray-600 mt-2">Big</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="01" data-name="French Fries"
+            data-price="790">
             <img src="/asstes/images/wedges.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -285,13 +301,14 @@
                     <p class="font-bold">Rs.790</p>
                 </div>
                 <p class="text-gray-600 mt-2">Big</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="01" data-name="French Fries"
+            data-price="790">
             <img src="/asstes/images/wedges.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -299,13 +316,14 @@
                     <p class="font-bold">Rs.790</p>
                 </div>
                 <p class="text-gray-600 mt-2">Big</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="01" data-name="French Fries"
+            data-price="790">
             <img src="/asstes/images/wedges.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -313,13 +331,14 @@
                     <p class="font-bold">Rs.790</p>
                 </div>
                 <p class="text-gray-600 mt-2">Big</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="01" data-name="French Fries"
+            data-price="790">
             <img src="/asstes/images/wedges.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -327,12 +346,13 @@
                     <p class="font-bold">Rs.790</p>
                 </div>
                 <p class="text-gray-600 mt-2">Big</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="01" data-name="French Fries"
+            data-price="790">
             <img src="/asstes/images/wedges.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -340,13 +360,14 @@
                     <p class="font-bold">Rs.790</p>
                 </div>
                 <p class="text-gray-600 mt-2">Big</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="01" data-name="French Fries"
+            data-price="790">
             <img src="/asstes/images/wedges.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -354,13 +375,14 @@
                     <p class="font-bold">Rs.790</p>
                 </div>
                 <p class="text-gray-600 mt-2">Big</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="01" data-name="French Fries"
+            data-price="790">
             <img src="/asstes/images/wedges.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -368,13 +390,14 @@
                     <p class="font-bold">Rs.790</p>
                 </div>
                 <p class="text-gray-600 mt-2">Big</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-1xl overflow-hidden">
+        <div class="bg-white shadow-lg rounded-1xl overflow-hidden product-card" data-id="01" data-name="French Fries"
+            data-price="790">
             <img src="/asstes/images/wedges.jpg" alt="fries" class="w-full h-72 object-cover">
             <div class="p-5">
                 <div class="flex justify-between items-center">
@@ -382,20 +405,21 @@
                     <p class="font-bold">Rs.790</p>
                 </div>
                 <p class="text-gray-600 mt-2">Big</p>
-                <a href="#order"
+                <button onclick="orderNow(this)"
                     class="mt-4 inline-block bg-black text-white px-3 py-1.5 rounded-lg shadow hover:bg-orange-600">Order
-                    Now</a>
+                    Now</button>
             </div>
         </div>
-    </div> -->
-
-    <!-- <section id="order" class="bg-gray-100 py-16">
-    <div class="container mx-auto text-center px-6">
-      <h2 class="text-3xl font-bold mb-6">Order Now</h2>
-      <p class="text-gray-600 mb-6">Choose your favorite dishes and place your order easily.</p>
-      <a href="#" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700">Proceed to Checkout</a>
     </div>
-  </section> -->
+
+    <section id="order" class="bg-gray-100 py-16">
+        <div class="container mx-auto text-center px-6">
+            <h2 class="text-3xl font-bold mb-6">Order Now</h2>
+            <p class="text-gray-600 mb-6">Choose your favorite dishes and place your order easily.</p>
+            <a href="cart.html" class="bg-black text-white px-6 py-3 rounded-lg shadow hover:bg-green-700">Proceed to
+                Checkout</a>
+        </div>
+    </section>
 
     <script src="/asstes/js/index.js"></script>
 </body>
