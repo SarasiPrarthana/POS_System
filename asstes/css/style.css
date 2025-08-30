@@ -1,0 +1,470 @@
+.hero {
+    position: relative;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: url('/asstes/images/hero-img.jpeg') no-repeat center center/cover;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 550px;
+    margin-left: 5%;
+    z-index: 2;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #dcdcdc;
+}
+
+.about-link {
+    display: inline-block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2px;
+    transition: 0.3s;
+}
+
+.about-link:hover {
+    color: orange;
+    border-color: orange;
+}
+
+.bottom-bar {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    bottom: -80px;
+    width: 750px;
+    background: #fff;
+    color: #000;
+}
+
+.order-now {
+    background: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-now:hover {
+    background: orange;
+    color: #111;
+}
+
+.info {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+.info h4 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.info p,
+.info a {
+    font-size: 0.9rem;
+    color: #333;
+    display: block;
+    margin-bottom: 0.3rem;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: orange;
+}
+
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .bottom-bar {
+        flex-direction: column;
+    }
+
+    .info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.content-container {
+    flex: 1;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.content-container img {
+    width: 35px;
+    height: auto;
+}
+
+.content-container span {
+    font-weight: bold;
+    color: orange;
+}
+
+.content-container h4 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.content-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.content-container p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #111;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+@media(max-width: 768px) {
+    .section-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .image-container {
+        margin-bottom: 20px;
+    }
+}
+
+.menu-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.menu-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #222;
+}
+
+.menu-section p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.6;
+}
+
+.menu-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 60px auto;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.menu-details {
+    padding: 30px;
+    text-align: left;
+    width: 50%;
+}
+
+.menu-details h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.menu-details p {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.menu-details .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111;
+}
+
+.footer {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+}
+
+.bg-footer-img {
+    background: url('/asstes/images/Burgerly.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    filter: blur(1px);
+}
+
+footer {
+    background-color: #111;
+    color: #bbb;
+    padding: 2rem 1rem;
+}
+
+footer a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.menu-hero {
+    background: url(/asstes/images/fries.webp);
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-hero .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.menu-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.menu-hero p {
+    font-size: 1.2rem;
+}
+
+.menu-nav {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.menu-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 12px 0;
+}
+
+.menu-nav ul li {
+    margin: 0 15px;
+}
+
+.menu-nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu-nav ul li a:hover {
+    color: #e63946;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 8px 0;
+    min-width: 180px;
+    z-index: 999;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 16px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-menu li a:hover {
+    background: #f6e58d;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.your-cart {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cart-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.cart-item-price {
+    color: #444;
+}
+
+.remove-btn {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+.total {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.empty-msg {
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+}
+
+.cart-summary {
+    max-width: 400px;
+    margin: 40px auto 0 auto; 
+    background: linear-gradient(135deg, #ff8c42, black); 
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.5px;
+}
+
+.summary-label {
+    font-size: 22px;
+    opacity: 0.9;
+}
+
+.summary-amount {
+    font-size: 26px;
+}
